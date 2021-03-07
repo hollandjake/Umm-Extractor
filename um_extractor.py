@@ -17,7 +17,7 @@ srt = YouTubeTranscriptApi.get_transcript(YOUTUBE_ID)
 i = 1
 
 vid_files = []
-clip = VideoFileClip("jack.mp4", audio=True)
+clip = VideoFileClip(OUTPUT_NAME, audio=True)
 for sub in srt:
     text = sub.get('text')
     if 'um' in text:
